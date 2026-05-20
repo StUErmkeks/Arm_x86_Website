@@ -1,8 +1,14 @@
-.title {
+.maintitle {
     color: black;
     text-align: center;
     font-family: Helvetica, sans-serif;
     font-size: xx-large
+}
+
+.title{
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: x-large
 }
 
 .subtitle {
