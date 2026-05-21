@@ -1,3 +1,3 @@
-# Website
+# Website über ARM und x86
 
-Is halt ne webiste
+Eine Website, die die beiden bekanntesten und verbreitetsten CPU-Architekturen vergleicht und erklärt
