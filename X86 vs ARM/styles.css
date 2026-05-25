@@ -67,12 +67,62 @@ body {
   box-shadow: 0 3px 6px black;
 }
 
-#tabelvornach{
+.Geraetbilder {
+  flex: 1;
+  background-color: #B388EB;
+  padding: 2px 15px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  text-decoration: none;
   color: black;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#tabelvornach {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 10px 0;
   font-family: Helvetica, sans-serif;
-  font-size: medium;
-  margin-left: auto;
-  margin-right: auto;
+  border: 2px solid black; 
+}
+
+#tabelvornach th, 
+#tabelvornach td {
+  border: 1px solid black; /* Trennlinien Zellen */
+  padding: 8px;         
+  text-align: left;       
+  vertical-align: middle;    
+}
+
+#tabelvornach th {
+  background-color: #F7AEF8; 
+  font-weight: bold;
+  border-bottom: 2px solid black; 
+  border-right: 2px solid black;
+}
+
+#tabelvornach th:first-child{
+  border-left: hidden;
+  border-top: hidden;
+  background-color: #ffe5f9;
+}
+
+#tabelvornach td:first-child {
+  font-weight: bold;
+  background-color: #F7AEF8;
+  width: 100px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#tabelvornach ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+#tabelvornach li {
+  list-style-position: outside;
+  line-height: 1.5;
 }
 
 #Navigationbar {
