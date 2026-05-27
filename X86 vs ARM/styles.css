@@ -56,7 +56,7 @@ body {
 
 .spalte-link {
   flex: 1;
-  background-color: #748CAB;
+  background-color: #3E5C76;
   padding: 2px 15px;
   border-radius: 20px;
   border: 2px solid #000000;
@@ -72,7 +72,7 @@ body {
 
 .Geraetbilder {
   flex: 1;
-  background-color: #748CAB;
+  background-color: #3E5C76;
   padding: 2px 15px;
   border-radius: 20px;
   border: 2px solid #000000;
@@ -149,7 +149,7 @@ body {
 #tabelvornach th:first-child{
   border-left: hidden;
   border-top: hidden;
-  background-color: #F0EBD8;
+  background-color: #748CAB;
 }
 
 #tabelvornach td:first-child {
