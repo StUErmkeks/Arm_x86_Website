@@ -41,11 +41,11 @@ body {
 .mainDiv {
   font-family: Helvetica, sans-serif;
   text-align: start;
-  border: 3px solid #3E5C76; /*farbe noch wechslen*/
+  border: 3px solid #3E5C76; 
   border-radius: 10px;
   background-color: #748CAB;
-  padding: 4px 8px;
-  margin: 20px auto;
+  padding: 2px 8px;
+  margin: 15px auto;
 }
 
 .spalten-container{
@@ -68,6 +68,27 @@ body {
 .spalte-link:hover{
   transform: translateY(-4px);
   box-shadow: 0 3px 6px black;
+}
+
+.card-container {
+  position: relative; /* Bezugspunkt für den Link */
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: Helvetica, sans-serif;
+  background-color: #748CAB;
+  text-align: center;
+  font-size: larger;
+  padding: 5px;
+}
+
+.stretched-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Link gesamten Inhalt Divs */
 }
 
 .Geraetbilder {
