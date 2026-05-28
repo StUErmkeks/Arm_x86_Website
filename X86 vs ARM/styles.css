@@ -32,7 +32,7 @@ body {
 .blocktext{
   color: black;
   font-family: Helvetica, sans-serif;
-  text-align: justify;
+  text-align: justify; /*Blocktext anordnung*/
   hyphens: auto;        /* Silbentrennung */
   line-height: 1.6;     
   margin-bottom: 1.5em;
@@ -109,7 +109,7 @@ body {
 }
 
 .bild-galerie img:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -181,7 +181,7 @@ body {
   display: flexbox;
 }
 
-#Navigationbar {
+.Navigationbar {
   font-family: Helvetica, sans-serif;
   list-style-type: none;
   margin: 10px auto;
@@ -194,22 +194,56 @@ body {
   width: max-content; 
 }
 
-#Navigationbar:hover{
+.Navigationbar:hover{
   transform: translateY(-4px);
   box-shadow: 0 3px 6px black;
 }
 
-#Navigationbar li a {
+.Navigationbar li a {
   display: block;
   color: black;
   padding: 20px 26px;
   text-decoration: none;
 }
 
-#Navigationbar li a:hover:not(.active) {
+.Navigationbar li a:hover:not(.active) {
   background-color: #748CAB;
 }
 
-#Navigationbar li a.active {
+.Navigationbar li a.active {
   background-color: #748CAB;
+}
+
+#ende{
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #3E5C76;
+  text-decoration: none;
+  color: white;
+  float: right;
+  font-family: Helvetica, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#ende:hover{
+  transition: translateY(-2px);
+  box-shadow: 0 3px 6px black;
+}
+
+#anfende{
+  float: left;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #3E5C76;
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#anfende:hover{
+  transition: translateY(-2px);
+  box-shadow: 0 3px 6px black;
 }

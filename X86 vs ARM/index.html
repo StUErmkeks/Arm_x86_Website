@@ -7,7 +7,7 @@
         <!--<script src="script.js"></script>-->
     </head>
     <body>
-        <ul id="Navigationbar">
+        <ul class="Navigationbar">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="arm.html">ARM</a></li>
             <li><a href="x86.html">x86</a></li>
@@ -18,33 +18,32 @@
         <h2 class="submaintitle">Prozessorarchitekturen im vergleich</h2>
         
         <div class="mainDiv"> 
-            <h1 class="title">Was ist eine Prozessorarchitektur?</h1>
-            <p class="blocktext">Als erstes sollte geklärt werden was eine Prozessorarchitektur ist. 
-            In erster Linie ist die Architektur 
-            der physische Aufbau einer CPU, also Struktur und Organisation.
-            Daneben Umfasst es außerdem noch den Befehlssatz, die Pipelinetechnik,
-            die verwendung des Caches und der Register, <!-- Hier diese Schwebebox mit erklärung-->
-            die Anordnung der Einheiten und die Art der Verarbeitung von Daten und
-            Anweisungen. </p>
+            <h3 class="title">Was ist eine Prozessorarchitektur?</h3>
+            <p class="blocktext">Als erstes sollte geklärt werden, was eine
+                Prozessorarchitektur ist. In erster Linie ist die Architektur der
+                physische Aufbau einer CPU, also Struktur und Organisation. 
+                Daneben umfasst es außerdem noch den Befehlssatz, die Pipelinetechnik, 
+                die Verwendung des Caches und der Register, die Anordnung der Einheiten
+                und die Art der Verarbeitung von Daten und Anweisungen. </p>
         </div>
         
         <div class="mainDiv">
-            <h1 class="title" href="arm.html">Grundidee der Architekturen</h1>
+            <h3 class="title" href="arm.html">Grundidee der Architekturen</h3>
           <div class="spalten-container">
             
             <a href="arm.html" class="spalte-link">
-                <h2 class="smalltitle">ARM</h2>
+                <h4 class="smalltitle">ARM</h4>
                 
-                <p class="blocktext">Basiert auf einen einfachen Befehlssatz und 
+                <p class="blocktext">Basiert auf einem einfachen Befehlssatz und 
                     setzt auf starke Reduzierung
                 </p>
                 
             </a>
             
             <a href="x86.html" class="spalte-link">
-                <h2 class="smalltitle">x86</h2>
+                <h4 class="smalltitle">x86</h4>
                 
-                <p class="blocktext">Basiert auf einen starken Befehlssatz, der besonders 
+                <p class="blocktext">Basiert auf einem starken Befehlssatz, der besonders 
                 Leistungsstark sein soll und Abwärtskompatibilität bis 
                 zu 16-Bit bietet.
                 </p>
@@ -54,58 +53,56 @@
         
         <div class="mainDiv">
             
-            <h1 class="title">Was ist ein Befehlssatz?</h1>
+            <h3 class="title">Was ist ein Befehlssatz?</h3>
             
-            <p class="blocktext"> Ein Befehlssatz besagt in erster Linie erstmal
-                wie viele Machinenbefehle <!-- Hier diese Schwebebox mit erklärung--> ein Prozessor hat.
-                Je nach Prozessor und Befehlssatz kann diese Zahl zwischen geringen 
-                zweistelligen Zahlen, wie 30, bis hin zu über 500 Befehelen variieren. 
-                Die bekanntesten Befehlssätze sind der RISC-Befehlssatz der ARM Architektur 
-                und der CISC-Befehlssatz der x86 Architektur.  
+            <p class="blocktext"> Ein Befehlssatz besagt in erster Linie, wie viele Maschinenbefehle 
+                ein Prozessor hat. Je nach Prozessor und Befehlssatz kann diese Zahl zwischen 
+                geringen zweistelligen Zahlen, wie 30, bis hin zu über 500 Befehlen variieren. 
+                Die bekanntesten Befehlssätze sind der RISC-Befehlssatz der ARM-Architektur und 
+                der CISC-Befehlssatz der x86-Architektur.
             </p>
         </div>  
         <div class="mainDiv">
-            <h2 class="title">Was ist eine Pipeline?</h2>
+            <h3 class="title">Was ist eine Pipeline?</h3>
             
-            <p class="blocktext"> Eine CPU Pipeline kann man sich wie ein Fließband 
-                vorstellen an dem die Befehle zur CPU geliefert werden. Damit soll die
-                Effizienz der Takte der CPU gesteigert werden, indem diese nicht jeden Befehl Schritt
-                für Schritt einzeln abarbeitet, sondern diese Aufteilt und Gleichzeitig bearbeitet.
-                Dafür sollte erstmal geklärt werden welche Stufen ein Befehl hat. Stufe eins ist 
-                der Fetch der Befehl wird sich gehohlt/geladen. Danach Folgt die zweite Stufe, namens
-                Decode, der Befehl wird entschlüsselt/verstanden und das Register gelesen.
-                Stufe drei ist der Execute part, als der Part der die Berechnungen übernimmt. 
-                Stufe vier, der Memory-part, also das zugreifen auf den Speicher, wird nur nach 
-                nötigkeit ausgeführt. Als letztes ist der Writeback, der die Brechnungen in das 
-                Register schreibt für weiteres nutzen der Daten für zum Beispiel darauf aufbauende 
-                Berechungen. 
+            <p class="blocktext">Eine CPU-Pipeline kann man sich wie ein Fließband vorstellen, an 
+                dem die Befehle zur CPU geliefert werden. Damit soll die Effizienz der Takte der 
+                CPU gesteigert werden, indem diese nicht jeden Befehl Schritt für Schritt einzeln 
+                abarbeitet, sondern diese aufteilt und gleichzeitig bearbeitet. Dafür sollte zunächst 
+                geklärt werden, welche Stufen ein Befehl hat. Stufe eins ist der Fetch: Der Befehl 
+                wird geholt/geladen. Danach folgt die zweite Stufe, namens Decode: Der Befehl 
+                wird entschlüsselt/verstanden und das Register gelesen. Stufe drei ist der 
+                Execute-Part, also der Part, der die Berechnungen übernimmt. Stufe vier, der 
+                Memory-Part, also das Zugreifen auf den Speicher, wird nur bei Bedarf ausgeführt. 
+                Als letztes folgt der Writeback, der die Berechnungen in das Register schreibt, 
+                für die weitere Nutzung der Daten, zum Beispiel für darauf aufbauende Berechnungen.
                 <br>
-                Jetzt kommt die Pipeline zum Einsatz. Wenn der erste Befehl den Fetch-Befehl
-                durchlaufen hat und in den Decode Part übergeht bearbeitet die CPU simultan schon
-                den nächsten Befehl im Fetch part und so weiter. Mit dieser Methode ist jederzeit
-                jeder Part der CPU genutzt. 
+                Jetzt kommt die Pipeline zum Einsatz. Wenn der erste Befehl den Fetch-Part durchlaufen 
+                hat und in den Decode-Part übergeht, bearbeitet die CPU simultan schon den nächsten
+                Befehl im Fetch-Part und so weiter. Mit dieser Methode ist jederzeit jeder Part der
+                CPU genutzt.
             </p>
             
-            <h3 class="smalltitle">Pipeline Hazards: Verzögerungen in der Pipeline</h3>
+            <h4 class="smalltitle">Pipeline Hazards: Verzögerungen in der Pipeline</h4>
             
-            <p class="blocktext"> Bei einem Pipeline Hazard verzögert sich die Pipeline, weil
-                ein Befehl auf einen Anderen warten muss. Es gibt verschieden Methoden um dagegen 
-                anzuarbeiten. Das Forwarding ist eine simple Methode. Anstatt das der Writeback 
-                ausgeführt wird, wird das Ergebnis gleich in den nächsten Befehl übergeben. 
-                Eine andere Methode ist die Branch Prediction. Besonders bei if/else operationen 
-                rät die CPU das Ergebnis und lädt dieses bereit vor. Obwohl die CPU "rät" sind 
-                heute CPUs 95-99% der Zeit richitg. Falls die Vorhersage falsch war löscht die
-                CPU das Vorgeladen wieder und lädt das passende. Noch eine Methode ist die 
-                Out of Order Execution. Stallt gerade eine Aktion und wartet auf eine andere Aktion
-                so kann die CPU einen späteren Befehl vorziehen, der mit den anderen nichts zu tun 
-                hat. Gesondert die Out of Order Execution findet bei ARM selterner statt, weil 
-                die Befehle darauf ausgelegt sind alle gleichlang zu brauchen. 
+            <p class="blocktext"> Bei einem Pipeline-Hazard verzögert sich die Pipeline, weil ein 
+                Befehl auf einen anderen warten muss. Es gibt verschiedene Methoden, um dagegen 
+                anzuarbeiten. Das Forwarding ist eine simple Methode. Anstatt dass der Writeback 
+                ausgeführt wird, wird das Ergebnis gleich in den nächsten Befehl übergeben. Eine 
+                andere Methode ist die Branch Prediction. Besonders bei If/Else-Operationen rät 
+                die CPU das Ergebnis und lädt dieses bereit vor. Obwohl die CPU „rät", sind heutige
+                CPUs 95–99 % der Zeit richtig. Falls die Vorhersage falsch war, löscht die CPU 
+                das Vorgeladene wieder und lädt das Passende. Noch eine Methode ist die Out-of-Order 
+                Execution. Wenn gerade eine Aktion stockt und auf eine andere wartet, kann die CPU
+                einen späteren Befehl vorziehen, der mit den anderen nichts zu tun hat. Erwähnenswert 
+                ist, dass die Out-of-Order Execution bei ARM seltener stattfindet, weil die Befehle 
+                darauf ausgelegt sind, alle gleich lang zu brauchen.
             </p>
         </div>
         
         <div class="mainDiv">
             
-            <h1 class="title">Vor- und Nachteile der Architekturen</h1>
+            <h3 class="title">Vor- und Nachteile der Architekturen</h3>
             
             <table id="tabelvornach">
                 <tr>
@@ -151,7 +148,7 @@
         
         <div class="mainDiv">
             
-            <h1 class="title">Geräte mit diesen Architekturen</h1>
+            <h3 class="title">Geräte mit diesen Architekturen</h3>
             
             <div class="spalten-container">
                 <div class=Geraetbilder>
@@ -159,15 +156,15 @@
                     <h2 class="smalltitle">ARM</h2>
                     <div class="bild-galerie">
                         <figure>
-                            <img src="Bilder/raspi.png" alt="Raspi">
+                            <img src="Bilder/raspi.jpeg" alt="Raspi">
                             <figcaption>Raspberry Pi 5</figcaption>
                         </figure>
                         <figure>
-                            <img src="Bilder/Handy.png" alt="Handy">
+                            <img src="Bilder/Handy.jpeg" alt="Handy">
                             <figcaption>Samsung Galaxy S22</figcaption>
                         </figure>
                         <figure>
-                            <img src="Bilder/switch.png" alt="Switch">
+                            <img src="Bilder/switch.jpeg" alt="Switch">
                             <figcaption>Nintendo Switch</figcaption>
                         </figure>
                     </div>
@@ -179,15 +176,15 @@
                     
                     <div class="bild-galerie">
                         <figure>
-                            <img src="Bilder/PC.png" alt="PC">
+                            <img src="Bilder/PC.jpeg" alt="PC">
                             <figcaption>Klassischer PC</figcaption>
                         </figure>
                         <figure>
-                            <img src="Bilder/Laptop.png" alt="Laptop">
+                            <img src="Bilder/Laptop.jpeg" alt="Laptop">
                             <figcaption>Windows Laptop</figcaption>
                         </figure>
                         <figure>
-                            <img src="Bilder/PS5.png" alt="PS5">
+                            <img src="Bilder/PS5.jpeg" alt="PS5">
                             <figcaption>PS5</figcaption>
                         </figure>
                     </div>
@@ -197,21 +194,30 @@
         
         <div class="mainDiv">
             
-            <h1 class="title">Welche Architektur ist besser?</h1>
+            <h3 class="title">Welche Architektur ist besser?</h3>
             
             <p class="blocktext">
-                Ein dirketes besser gibt es bisher bei den Architekturen nicht. Viel
-                mehr sind die Architekturen bisher die besten in ihrem Anwedungsbereich. ARM in 
-                mobilen Geräten und in Geräten, in welchen energieeffizienz gefordert ist.
-                x86 dafür in leistungsstarken Desktops und Laptops, sowie vielen Servern. 
+                Ein direktes „Besser" gibt es bisher bei den Architekturen nicht. Vielmehr sind die 
+                Architekturen bisher die besten in ihrem Anwendungsbereich: ARM in mobilen Geräten 
+                und in Geräten, in welchen Energieeffizienz gefordert ist. x86 dagegen in 
+                leistungsstarken Desktops und Laptops sowie vielen Servern.
                 <br> <br>
-                Ich persölich vermute eine stärkere zukunft für ARM-Prozessoren durch ihre bessere
-                Energieeffizienz und ihrer trotzdem sehr starken Prozessorleistung. Besonders der
-                noch von x86 dominierte Laptopmarkt wird wahrscheinlich in der näheren Zukunft durch
-                ARM Prozessoren übernommen. 
+                Ich persönlich vermute eine stärkere Zukunft für ARM-Prozessoren durch ihre bessere 
+                Energieeffizienz und ihre trotzdem sehr starke Prozessorleistung. Besonders der
+                noch von x86 dominierte Laptopmarkt wird wahrscheinlich in näherer Zukunft durch
+                ARM-Prozessoren übernommen.
             </p>
             
         </div>
         
+        <footer>
+            <a id="anfende" href="impressum.html">
+            &larr; Impressum</a>
+            <a id="ende" href="arm.html">
+            ARM &rarr;</a>
+            <br>
+        </footer>  
+        
     </body>
+    
 </html>

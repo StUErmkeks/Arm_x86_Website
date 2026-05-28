@@ -5,8 +5,9 @@
         <title>ARM versus x86</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
+    
     <body>
-        <ul id="Navigationbar">
+        <ul class="Navigationbar">
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="arm.html">ARM</a></li>
             <li><a href="x86.html">x86</a></li>
@@ -18,7 +19,7 @@
         
         <div id="Warning-Box">
             
-            <h1 id="warning-title">Warnung!</h1>
+            <h3 id="warning-title">Warnung!</h3>
             
             <p class="blocktext">Dieser Webseitenabschnitt sollte nur gelesen werden,
                 wenn man Pipelintechniken und die Idee eines Befehlssatzes verstanden hat.
@@ -27,26 +28,27 @@
         
         <div class="mainDiv">
             
-            <h1 class="title">Der wichtigste Unterschied: Der Befehlssatz</h1>
+            <h3 class="title">Der wichtigste Unterschied: Der Befehlssatz</h3>
             
             <p class="blocktext">
-                ARM-Machienen, basieren auf dem RISC Befehlssatz. Die Herkunft des 
-                Namens ARM kommt von Advanced RISC Machine, also kurz ARM. Der RISC Befehlssatz
-                setzt auf starke Reduzierung und wenige Befehle. Besonders auf Befehle, welche 
-                Speicherabläufe und arithmetische Befehle kombinieren wird verzichtet. Durch
-                diesen Verzicht wird der Aufwand für Assembler Programierer komplexer und 
-                aufwendiger. 
+                ARM-Maschinen basieren auf dem RISC-Befehlssatz. Der Name ARM steht für
+                Advanced RISC Machine. Der RISC-Befehlssatz setzt auf starke Reduzierung 
+                und wenige Befehle. Besonders auf Befehle, welche Speicherabläufe und 
+                arithmetische Operationen kombinieren, wird verzichtet. Durch diesen 
+                Verzicht wird die Arbeit für Assembler-Programmierer komplexer und 
+                aufwendiger.
             </p>
         </div>
         
         <div class="mainDiv">
-            <h2 class="title">Was bringt ein Reduzierter Befehlssatz?</h2>
+            <h3 class="title">Was bringt ein Reduzierter Befehlssatz?</h3>
             
             <p class="blocktext">
-                Durch den Reduzierten Befehlssatz kann die CPU einfacher höher getaktet werden und 
-                schafft damit mehr Zyklen in kürzerer Zeit. Damit sind trotz insgesamt mehr 
-                Ausgeführter Befehle teilweise Aufgaben schneller erledigt. Auch Vorteil des 
-                Reduzierten Befehlssatzes ist die Möglichkeit insgesamt mehr Transistoren zu verbauen.
+                Durch den reduzierten Befehlssatz kann die CPU einfacher höher getaktet
+                werden und schafft damit mehr Zyklen in kürzerer Zeit. Damit sind 
+                trotz insgesamt mehr ausgeführter Befehle manche Aufgaben schneller
+                erledigt. Auch ein Vorteil des reduzierten Befehlssatzes ist die 
+                Möglichkeit, insgesamt mehr Transistoren zu verbauen.
             </p>
         </div>
         
@@ -54,35 +56,46 @@
             <h3 class="title">Und was ist mit der Pipeline?</h3>
             
             <p class="blocktext">
-                Die Pipeline hat bei ARM-Prozzesoren den größten Voteil. Da die meisten RISC Befehle
-                darauf Ausgelegt sind kurz zu sein haben diese sogut wie immer die gleiche Länge. 
-                dadurch kann die Pipeline deutlich einfacher Vorausplanen und läuft somit sehr selten
-                in Pipeline Hazards. 
+                Die Pipeline hat bei ARM-Prozessoren den größten Vorteil. Da die 
+                meisten RISC-Befehle darauf ausgelegt sind, kurz zu sein, haben 
+                diese so gut wie immer die gleiche Länge. Dadurch kann die Pipeline
+                deutlich einfacher vorausplanen und läuft somit sehr selten in 
+                Pipeline-Hazards.
             </p>
             
         </div>
         
         <div class="mainDiv">
             
-            <h4 class="title">Historie: Von der kleinen Idee zum Marktführer</h4>
+            <h3 class="title">Historie: Von der kleinen Idee zum Marktführer</h3>
             
             <p class="blocktext">
-                Acorn suchte einen Nachfolger für den veralteten 8-Bit-Prozessor 6502. Sie suchten 
-                nach einer neuen CPU aber fanden keine. In 1983 startete Acorn Computers aus 
-                dem Vereinigten Königreich die Entwicklung ihrer eigenen RISC Maschine. 
-                Die Acorn RISC Machine kurz ARM. In 1985 war dann der erste Prozessor 
-                fertig der ARM1 mit ca 25.000 Transitoren und 32-Bit Basis. Er wurde 
-                nur in Acorns eigenen Computern verbaut. In 1990 wurde dann ARM Ltd. Gegründet.
-                Diese Firma sollte Lizenzen für andere Hersteller herausgeben. In 1987 brachten 
-                die bereits den ARM2 Chip heraus der Leistungstechnisch sogar stärker als 
-                die Damaligen Macintosh Computern von Appel war. Durch das Linzenzmodell verbreiteten
-                sich die Prozessoren schnell und das besonders in Eingebetteten Systemen. 
-                Bis ARMv7 liefen die Prozessoren auf 32-Bit in 2011 kam dann der ARMv8-A 
-                heraus der auf 64-Bit basiert. Aktuellste Architektur ist ARMv9 mit Fokus auf 
-                KI und Machine learning.
+                Acorn suchte einen Nachfolger für den veralteten 8-Bit-Prozessor 6502.
+                Sie suchten nach einer neuen CPU, fanden aber keine. 1983 startete 
+                Acorn Computers aus dem Vereinigten Königreich die Entwicklung ihrer 
+                eigenen RISC-Maschine: die Acorn RISC Machine, kurz ARM. 1985 war 
+                dann der erste Prozessor fertig – der ARM1 mit ca. 25.000 Transistoren
+                und 32-Bit-Basis. Er wurde nur in Acorns eigenen Computern verbaut.
+                1990 wurde dann ARM Ltd. gegründet. Diese Firma sollte Lizenzen für
+                andere Hersteller herausgeben. Bereits 1987 brachten sie den 
+                ARM2-Chip heraus, der leistungstechnisch sogar stärker als die 
+                damaligen Macintosh-Computer von Apple war. Durch das Lizenzmodell 
+                verbreiteten sich die Prozessoren schnell, besonders in eingebetteten 
+                Systemen. Bis ARMv7 liefen die Prozessoren auf 32-Bit. 2011 kam dann 
+                der ARMv8-A heraus, der auf 64-Bit basiert. Die aktuellste Architektur 
+                ist ARMv9 mit Fokus auf KI und Machine Learning.
             </p>
             
         </div>
         
+         <footer>
+            <a id="anfende" href="index.html">
+            &larr; Home</a>
+            <a id="ende" href="x86.html">
+            x86 &rarr;</a>
+             <br>
+        </footer>
+        
     </body>
+    
 </html>
