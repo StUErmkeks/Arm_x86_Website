@@ -1,5 +1,7 @@
 body {
-  background-color: #F0EBD8
+  background-color: #F0EBD8;
+  font-family: Helvetica, sans-serif;
+
 }
 
 .maintitle {
@@ -79,6 +81,12 @@ body {
   text-align: center;
   font-size: larger;
   padding: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-container:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px black;
 }
 
 .stretched-link::after {
